@@ -39,19 +39,26 @@ GatsbyJS Default Starter, stripped of example styles and with the following addi
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+```
+src
+├── components
+│   ├── header.tsx
+│   ├── image.tsx
+│   ├── layout.css
+│   ├── layout.tsx
+│   ├── logo.stories.tsx
+│   ├── logo.tsx
+│   └── seo.tsx
+├── global-style.tsx
+├── images
+│   ├── gatsby-astronaut.png
+│   └── gatsby-icon.png
+├── pages
+│   ├── 404.tsx
+│   ├── index.tsx
+│   └── page-2.tsx
+└── tailwind.css
+```
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
