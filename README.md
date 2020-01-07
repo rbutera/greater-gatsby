@@ -21,7 +21,9 @@ Perfect for your best JAMStack projects in 2020 and beyond!
 gatsby new PROJECT_NAME https://github.com/rbutera/greater-gatsby
 ```
 
-For a more detailed understanding on what's going on with this starter underneath the hood, check out the blog post written by [rbutera](https://github.com/rbutera) on Medium.
+For a more detailed understanding on what's going on with this starter underneath the hood, check out the blog post written by [rbutera](https://github.com/rbutera) on Medium:
+
+[BLOG POST: JAMStack Tutorial Part 1: GatsbyJS with Storybook, TailwindCSS, and Typescript Setup on Medium.com](https://medium.com/@rbutera/jamstack-tutorial-part-1-gatsbyjs-with-storybook-tailwindcss-and-typescript-setup-bd28855db897)
 
 ## Project Structure
 
