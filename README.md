@@ -49,7 +49,7 @@ src
 ## Plans for Future Development
 
 - We intend to keep this starter lightweight, but also add some further opinionated customizations
-- We admire the work in
+- We admire the work in [gatsby-universal](https://github.com/fabe/gatsby-universal) and so we'll probably steal some of the features of that starter for this one.
 
 ## Roadmap and TODO
 
