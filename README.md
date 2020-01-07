@@ -1,97 +1,69 @@
-# Greater-Gatsby
+# greater-gatsby
 
-GatsbyJS Default Starter, stripped of example styles and with the following additions:
+> **BAREBONES** and **LIGHTWEIGHT** GatsbyJS Default Starter with Typescript, PostCSS, Storybook, & Tailwind CSS
+
+![greater-gatsby logo](src/images/greater-gatsby-logo-full-bg.png)
+
+## Features
+
+**BAREBONES** and **LIGHTWEIGHT** GatsbyJS Default Starter, stripped of example styles and with the following additions:
 
 - Storybook
 - PostCSS
 - TailwindCSS
 - Typescript
 
-## 🚀 Quick start
+Perfect for your best JAMStack projects in 2020 and beyond!
 
-1.  **Create a Gatsby site.**
+## Quick Start
 
-    Use the Gatsby CLI to create a new site, specifying this starter.
-
-    ```shell
-    # create a new Gatsby site using this statrter
-    gatsby new my-project https://github.com/rbutera/greater-gatsby
-    ```
-
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-project/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-project` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
+```shell
+gatsby new PROJECT_NAME https://github.com/rbutera/greater-gatsby
 ```
+
+For a more detailed understanding on what's going on with this starter underneath the hood, check out the blog post written by [rbutera](https://github.com/rbutera) on Medium.
+
+## Project Structure
+
+We have included an example `<Logo />` component (complete with an example storybook story).
+
+You can check these out at:
+[./src/components/logo.tsx](./src/components/logo.tsx)
+[./src/components/logo.stories.tsx](./src/components/logo.stories.tsx)
+
+Only the configuration files (see the blog post) and the below files are actually different to the default Gatsby starter.
+
+If you're comfortable working with the default gatsby starter then this starter will be right up your street! :smile:
+
+```shell
 src
 ├── components
-│   ├── header.tsx
-│   ├── image.tsx
-│   ├── layout.css
-│   ├── layout.tsx
-│   ├── logo.stories.tsx
-│   ├── logo.tsx
-│   └── seo.tsx
-├── global-style.tsx
-├── images
-│   ├── gatsby-astronaut.png
-│   └── gatsby-icon.png
-├── pages
-│   ├── 404.tsx
-│   ├── index.tsx
-│   └── page-2.tsx
-└── tailwind.css
+│   ├── header.tsx # only slightly modified
+│   ├── layout.css # now empty, ready for your customizations
+│   ├── logo.stories.tsx # EXAMPLE COMPONENT STORY
+│   ├── logo.tsx # EXAMPLE COMPONENT
+├── global-style.tsx # global styles go here, and are used by both your Gatsby application and Storybook
+└── tailwind.css # tailwind preflight
 ```
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+## Plans for Future Development
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+- We intend to keep this starter lightweight, but also add some further opinionated customizations
+- We admire the work in
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## Roadmap and TODO
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+- [x] add typescript
+- [x] add postCSS
+- [x] remove default styles
+- [x] remove default styles
+- [x] write blog post
+- [ ] create a good looking starter template
+- [ ] link to projects using this starter
+- [ ] add unit tests
+- [ ] add generation of favicons
+- [ ] add other features from [gatsby-universal](https://github.com/fabe/gatsby-universal)
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+## Contribution
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+All contributions / suggestions are very very welcome! Please open an issue, PR or send an email to rbutera ([rai@rstlss.org](mailto:rai@rstlss.org))
