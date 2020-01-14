@@ -8,10 +8,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+import tw from "tailwind.macro"
+
 import GlobalStyle from "../global-style.tsx"
 
 import Header from "./header"
 import "./layout.css"
+
+const Footer = styled.footer`
+  ${tw`my-10 text-center text-sm`}
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,11 +37,14 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <footer>
+        <Footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+          <a href="https://www.gatsbyjs.org">Gatsby</a> +{" "}
+          <a href="https://www.github.com/rbutera/greater-gatsby">
+            greater-gatsby
+          </a>
+        </Footer>
       </div>
     </>
   )

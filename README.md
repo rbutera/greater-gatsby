@@ -8,10 +8,11 @@
 
 **BAREBONES** and **LIGHTWEIGHT** GatsbyJS Default Starter, stripped of example styles and with the following additions:
 
-- Storybook
+- Storybook (latest)
 - PostCSS
-- TailwindCSS
-- Typescript
+- TailwindCSS (v1.0+)
+- TypeScript
+- Styled Components (v5+)
 
 Perfect for your best JAMStack projects in 2020 and beyond!
 

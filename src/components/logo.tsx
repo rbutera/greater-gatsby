@@ -1,15 +1,33 @@
 import React from "react"
 import styled from "styled-components"
 import tw from "tailwind.macro"
+import Emblem from "../images/greater-gatsby-emblem-only.svg"
 
 const Text = styled.h1`
-  ${tw`inline-block w-auto rounded bg-red-600 text-white p-4 tracking-tight select-none`};
-  font-size: 3rem;
+  ${tw`inline-block text-gray-900 tracking-tight select-none mb-4`};
+  font-size: 4rem;
   line-height: 2.9rem;
 `
 
+const Subtitle = styled.p`
+  ${tw`block mt-2 p-0 text-gray-600 max-w-md text-center text-2xl leading-tight`}
+`
+
+const LogoStyle = styled.div`
+  ${tw`flex flex-col items-center justify-start my-10`}
+`
+
 const Logo = () => {
-  return <Text>greater-gatsby</Text>
+  return (
+    <LogoStyle>
+      <img src={Emblem} className="w-48" />
+      <Text>greater-gatsby</Text>
+      <Subtitle>
+        Barebones and Lightweight GatsbyJS Starter with Typescript, PostCSS,
+        Storybook, & Tailwind CSS
+      </Subtitle>
+    </LogoStyle>
+  )
 }
 
 export default Logo

@@ -18,7 +18,7 @@ const IndexPage = () => (
       <Anchor href="https://github.com/rbutera">Rai Butera (rbutera)</Anchor>
       of <Anchor href="https://rstlss.org">RSTLSS.org</Anchor>{" "}
     </p>
-    <p>Let's build something great!</p>
+    <p>Let's build something great, in record speed!</p>
   </Layout>
 )
 
