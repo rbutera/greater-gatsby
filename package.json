@@ -2,7 +2,7 @@
   "name": "greater-gatsby",
   "private": true,
   "description": "Barebones and Lightweight GatsbyJS Default Starter with Typescript, PostCSS, Storybook, & Tailwind CSS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Rai Butera <rai@rbutera.com>",
   "dependencies": {
     "babel-plugin-macros": "^2.8.0",
@@ -35,6 +35,7 @@
     "autoprefixer": "^9.7.3",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
+    "babel-preset-react-app": "^9.1.0",
     "postcss": "^7.0.26",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
