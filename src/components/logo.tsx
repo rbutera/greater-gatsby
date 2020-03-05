@@ -17,13 +17,13 @@ const LogoStyle = styled.div`
   ${tw`flex flex-col items-center justify-start my-10`}
 `
 
-const Logo = () => {
+const Logo: React.FunctionComponent = () => {
   return (
     <LogoStyle>
       <img src={Emblem} className="w-48" />
       <Text>greater-gatsby</Text>
       <Subtitle>
-        Barebones and Lightweight GatsbyJS Starter with Typescript, PostCSS,
+        Bare-bones and Lightweight GatsbyJS Starter with Typescript, PostCSS,
         Storybook, & Tailwind CSS
       </Subtitle>
     </LogoStyle>

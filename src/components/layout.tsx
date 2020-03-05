@@ -7,11 +7,9 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import tw from "tailwind.macro"
-
-import GlobalStyle from "../global-style.tsx"
+import GlobalStyle from "../global-style"
 
 import Header from "./header"
 import "./layout.css"
@@ -20,21 +18,11 @@ const Footer = styled.footer`
   ${tw`my-10 text-center text-sm`}
 `
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+const Layout: React.FunctionComponent = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <div>
         <main>{children}</main>
         <Footer>
