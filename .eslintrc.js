@@ -14,6 +14,7 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
   ],
@@ -26,6 +27,19 @@ module.exports = {
       files: ["*.ts", "*.tsx"],
       rules: {
         "@typescript-eslint/explicit-function-return-type": ["error"],
+        "@typescript-eslint/member-delimiter-style": [
+          "error",
+          {
+            multiline: {
+              delimiter: "none",
+              requireLast: false,
+            },
+            singleline: {
+              delimiter: "semi",
+              requireLast: false,
+            },
+          },
+        ],
       },
     },
   ],
