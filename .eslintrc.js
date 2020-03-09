@@ -6,6 +6,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    project: "./tsconfig.json",
   },
   plugins: ["@typescript-eslint", "eslint-plugin-react"],
   env: {
@@ -16,11 +17,14 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:react/recommended",
   ],
 
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/require-await": "off",
   },
   overrides: [
     {
