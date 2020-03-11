@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEOData from "../components/seo"
 import styled from "styled-components"
-import tw from "tailwind.macro"
+import tw from "twin.macro"
 
 const Anchor = styled.a`
   ${tw`font-bold text-blue-600 hover:text-blue-300 mx-1`}
@@ -10,7 +10,7 @@ const Anchor = styled.a`
 
 const IndexPage: React.FunctionComponent = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEOData title="Home" />
 
     <h1>Thanks for trying greater-gatsby!</h1>
     <p>

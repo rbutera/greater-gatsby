@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components"
-import tw from "tailwind.macro"
+import {createGlobalStyle} from "styled-components"
+import tw from "twin.macro"
 
 import "./tailwind.css"
 

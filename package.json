@@ -23,8 +23,8 @@
     "react-helmet": "^5.2.1",
     "react-is": "^16.8",
     "styled-components": "^5.0.0",
-    "tailwind.macro": "^1.0.0-alpha.10",
-    "tailwindcss": "^1.1.4"
+    "tailwindcss": "^1.1.4",
+    "twin.macro": "^1.0.0-alpha.7"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -38,7 +38,6 @@
     "autoprefixer": "^9.7.3",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
-    "babel-plugin-tailwind-components": "^0.5.10",
     "babel-preset-react-app": "^9.1.0",
     "eslint-config-xo": "^0.29.1",
     "eslint-config-xo-react": "^0.23.0",
