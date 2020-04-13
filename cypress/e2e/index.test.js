@@ -3,7 +3,7 @@ describe('index page tests', () => {
     cy.visit('/')
   })
   it('has has a list of features', () => {
-    cy.findByText(/TypeScript/).should('be.visible')
+    cy.findByText(/typescript/i).should('be.visible')
     cy.findByText(/storybook/i).should('be.visible')
     cy.findByText(/postcss/i).should('be.visible')
     cy.findByText(/tailwindcss/i).should('be.visible')
@@ -15,7 +15,7 @@ describe('index page tests', () => {
   })
 
   it('has a link to the github readme', () => {
-    cy.get('a[href^="https://github.com/rbutera/greater-gatsby]"]').should(
+    cy.get('a[href^="https://github.com/rbutera/greater-gatsby"]').should(
       'be.visible'
     )
   })

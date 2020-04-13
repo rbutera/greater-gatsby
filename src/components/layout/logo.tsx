@@ -9,18 +9,13 @@ const Text = styled.h1`
   line-height: 2.9rem;
 `
 
-const Subtitle = styled.p`
-  ${tw`block mt-2 p-0 text-gray-600 max-w-md text-center text-2xl leading-tight`}
-`
-
-const LogoStyle = styled.div`
-  ${tw`flex flex-col items-center justify-start my-10`}
-`
+const Subtitle = tw.p`block mt-2 p-0 text-gray-600 max-w-md text-center text-2xl leading-tight`
+const LogoStyle = tw.div`flex flex-col items-center justify-start my-10`
 
 const Logo: React.FunctionComponent = () => {
   return (
     <LogoStyle>
-      <img src={Emblem} className="w-48" />
+      <img src={Emblem} alt="greater-gatsby logo" className="w-48" />
       <Text>greater-gatsby</Text>
       <Subtitle>Bare-bones and Lightweight GatsbyJS Starter</Subtitle>
     </LogoStyle>

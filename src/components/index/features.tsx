@@ -17,11 +17,13 @@ const Features: React.FunctionComponent = () => (
       <Feature>Typescript</Feature>
       <Feature>PostCSS</Feature>
       <Feature>Storybook</Feature>
-      <Feature>Tailwind CSS</Feature>
+      <Feature>TailwindCSS</Feature>
+      <Feature>Styled Components</Feature>
       <Feature>Jest</Feature>
       <Feature>Cypress</Feature>
       <Feature>eslint</Feature>
       <Feature>Prettier</Feature>
+      <Feature>lint-staged</Feature>
     </FeatureList>
   </FeaturesStyle>
 )
