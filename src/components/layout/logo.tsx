@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import tw from "twin.macro"
-import Emblem from "../images/greater-gatsby-emblem-only.svg"
+import React from 'react'
+import styled from 'styled-components'
+import tw from 'twin.macro'
+import Emblem from '../../images/greater-gatsby-emblem-only.svg'
 
 const Text = styled.h1`
   ${tw`inline-block text-gray-900 tracking-tight select-none mb-4`};
@@ -22,10 +22,7 @@ const Logo: React.FunctionComponent = () => {
     <LogoStyle>
       <img src={Emblem} className="w-48" />
       <Text>greater-gatsby</Text>
-      <Subtitle>
-        Bare-bones and Lightweight GatsbyJS Starter with Typescript, PostCSS,
-        Storybook, & Tailwind CSS
-      </Subtitle>
+      <Subtitle>Bare-bones and Lightweight GatsbyJS Starter</Subtitle>
     </LogoStyle>
   )
 }

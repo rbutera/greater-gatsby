@@ -1,6 +1,9 @@
 {
-  "plugins": ["tailwind-components"],
+  "plugins": ["babel-plugin-macros"],
   "presets": [
+    "@babel/env",
+    "@babel/typescript",
+    "@babel/react",
     [
       "babel-preset-gatsby",
       {
@@ -9,5 +12,10 @@
         }
       }
     ]
-  ]
+  ],
+  "env": {
+    "test": {
+      "plugins": ["require-context-hook"]
+    }
+  }
 }

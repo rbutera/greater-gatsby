@@ -1,20 +1,23 @@
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "commonjs",
-        "target": "es6",
-        "jsx": "react",
-        "lib": [
-            "dom",
-            "esnext"
-        ],
-        "esModuleInterop": true,
-        "noUnusedLocals": false,
-    },
-    "exclude": [
-        "node_modules",
-        "public",
-        ".cache"
-    ]
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react",
+    "lib": ["dom", "esnext"],
+    "esModuleInterop": true,
+    "noUnusedLocals": false
+  },
+  "include": [
+    "*.js",
+    "*.ts",
+    "src/**/*",
+    "test/**/*",
+    "test/*.ts",
+    "cypress/**/*",
+    "__mocks__/**/*"
+  ],
+  "exclude": ["node_modules", "public", ".cache", "dist"],
+  "files": ["src/custom.d.ts"]
 }

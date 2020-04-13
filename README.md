@@ -13,9 +13,12 @@
 - TailwindCSS (v1.0+)
 - TypeScript
 - Styled Components (v5+)
+- twin.macro for TailwindCSS integration into styled-components
 - fully configured eslint (via xo)
 - Prettier code-formatting
-- Lint-Staged for Code Quality.
+- lint-staged for Code Quality.
+- Cypress for easy end-to-end testing
+- Jest for unit testing
 
 Perfect for your best JAMStack projects in 2020 and beyond!
 
@@ -37,46 +40,79 @@ To install all the required dependencies using **Yarn**, run `yarn install`
 
 Then you can start the development server:
 
-
 ```shell
 gatsby develop
 ```
 
 By default the development server will be running on port 3000, so to visit it open a browser and go to [https://localhost:3000](https://localhost:3000)
 
-
 ### Component Development Using Storybook
+
 To develop components, run Storybook:
 
-```
+```shell
 yarn storybook
 ```
+
 By default Storybook runs on will be running on port 6006, so to visit it open a browser and go to [https://localhost:6006](https://localhost:6006)
 
+## Project Structure and Instructions
 
-
-## Project Structure
+### Components
 
 We have included an example `<Logo />` component (complete with an example storybook story).
 
 You can check these out at:
-[./src/components/logo.tsx](./src/components/logo.tsx)
-[./src/components/logo.stories.tsx](./src/components/logo.stories.tsx)
+[./src/components/layout/logo.tsx](./src/components/layout/logo.tsx)
+[./src/components/layout/logo.stories.tsx](./src/components/layout/logo.stories.tsx)
 
-Only the configuration files (see the blog post) and the below files are actually different to the default Gatsby starter.
+See also [the components for the index page](./src/components/index/)
 
-If you're comfortable working with the default gatsby starter then this starter will be right up your street! :smile:
+## Testing
+
+By the way, we've installed [testing-library](https://testing-library.com/) libraries for you for react, jest and cypress :smile:
+
+### Unit Testing
+
+Unit testing is included using [Jest](https://jest.io), which has been preconfigured with jest-extended and jest-dom.
+
+To run unit tests:
 
 ```shell
-src
-├── components
-│   ├── header.tsx # only slightly modified
-│   ├── layout.css # now empty, ready for your customizations
-│   ├── logo.stories.tsx # EXAMPLE COMPONENT STORY
-│   ├── logo.tsx # EXAMPLE COMPONENT
-├── global-style.tsx # global styles go here, and are used by both your Gatsby application and Storybook
-└── tailwind.css # tailwind preflight
+yarn test:unit:ci # run once, OR...
+yarn test:unit:dev # ... run and watch for changes
 ```
+
+### End-to-End Testing
+
+End to End testing is included using Cypress.
+
+Accessibility is automatically tested using cypress.test.js
+
+See [the index end to end test](./cypress/e2e/index.test.js)
+
+To run end to end tests:
+
+```shell
+yarn test:e2e:ci # run once, OR...
+yarn test:e2e:dev # ... run and watch for changes
+```
+
+### State Management (optional)
+
+State management has been included using [Redux](https://redux.js.org).
+
+To remove redux just remove src/state and empty out gatsby-browser.js
+
+All redux related source files belong in [src/state](./src/state)
+
+The redux setup is ready for unit tests. We've included some basic tests in there for you.
+
+Add new reducers to [src/state/root-reducer](./src/state/root-reducer.ts)
+
+We suggest you use the modular [redux-duck](https://github.com/erikras/ducks-modular-redux) redux structure convention, but you can use whatever you like!
+
+Do check out the example [Counter](./src/state/counter.ts) which also has associated [tests](./src/state/__tests__/counter.ts)
 
 ## Plans for Future Development
 
@@ -92,17 +128,17 @@ src
 - [x] write blog post
 - [ ] create a good looking starter template
 - [ ] link to projects using this starter
-- [ ] add unit tests
-- [ ] add generation of favicons
+- [x] add unit tests
+- [ ] add favicon generation
 - [ ] add other features from [gatsby-universal](https://github.com/fabe/gatsby-universal)
-
 
 ## Contribution
 
 All contributions / suggestions are very very welcome! Please open an issue, PR or send an email to rbutera ([rai@rstlss.org](mailto:rai@rstlss.org))
 
-## Thanks 
+### Thanks
 
 Big thanks to the following people for contributing:
 
+- [rbutera](https://github.com/rbutera)
 - [DBozhinovski](https://github.com/DBozhinovski)
