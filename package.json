@@ -106,7 +106,7 @@
     "start-server-and-test": "^1.10.10",
     "ts-loader": "^6.2.1",
     "typesafe-actions": "^5.1.0",
-    "typescript": "^3.9.0-beta"
+    "typescript": "^3.9.0-dev.20200413"
   },
   "keywords": [
     "gatsby"

@@ -2,14 +2,18 @@ module.exports = {
   settings: {
     version: 'detect',
   },
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
+  },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:unicorn/recommended',
     'xo/browser',
     'xo/esnext',
-    'xo-typescript/space',
     'xo-react/space',
     'plugin:cypress/recommended',
     'plugin:chai-friendly/recommended',
