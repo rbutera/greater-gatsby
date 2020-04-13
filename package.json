@@ -6,6 +6,7 @@
   "author": "Rai Butera <rai@rbutera.com>",
   "dependencies": {
     "babel-plugin-macros": "^2.8.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.18.12",
     "gatsby-cli": "^2.8.26",
     "gatsby-image": "^2.2.34",
@@ -14,6 +15,7 @@
     "gatsby-plugin-postcss": "^2.1.18",
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-plugin-styled-components": "^3.2.1",
     "gatsby-plugin-typescript": "^2.1.23",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-sharp": "^2.3.7",

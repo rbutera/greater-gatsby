@@ -13,6 +13,9 @@
 - TailwindCSS (v1.0+)
 - TypeScript
 - Styled Components (v5+)
+- fully configured eslint (via xo)
+- Prettier code-formatting
+- Lint-Staged for Code Quality.
 
 Perfect for your best JAMStack projects in 2020 and beyond!
 
@@ -97,3 +100,9 @@ src
 ## Contribution
 
 All contributions / suggestions are very very welcome! Please open an issue, PR or send an email to rbutera ([rai@rstlss.org](mailto:rai@rstlss.org))
+
+## Thanks 
+
+Big thanks to the following people for contributing:
+
+- [DBozhinovski](https://github.com/DBozhinovski)
