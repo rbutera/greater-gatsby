@@ -16,7 +16,7 @@ import Footer from './footer'
 import './layout.css'
 
 const LayoutStyle = styled.div`
-  ${tw`min-w-full w-screen h-screen min-h-screen p-0 m-0 flex flex-col`}
+  ${tw`p-2 m-0 w-screen overflow-x-hidden`}
 `
 
 const Spacer = styled.div`

@@ -13,7 +13,7 @@ const Anchor = styled.a`
 
 const IndexStyle = styled.div`
   > section {
-    ${tw`my-4`}
+    ${tw`my-3`}
   }
 `
 

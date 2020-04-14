@@ -5,15 +5,14 @@ import './tailwind.css'
 
 export default createGlobalStyle`
   body {
-    ${tw`m-0 p-0 font-sans text-gray-900 flex flex-col text-lg justify-center items-center`};
+    ${tw`m-0 p-0 font-sans text-gray-900 flex flex-col justify-center items-center`};
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-text-size-adjust: 100%;
-    width: 100vw;
-    max-width: 100vw;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-font-feature-settings: "pnum";
+    overflow-x: hidden;
     font-feature-settings: "pnum";
     font-variant-numeric: proportional-nums;
   }
@@ -22,7 +21,7 @@ export default createGlobalStyle`
   }
 
   h1 {
-    ${tw`text-3xl`}
+    ${tw`text-3xl leading-none`}
   }
   a {
     ${tw`font-bold text-blue-600 hover:text-blue-400`}
