@@ -4,5 +4,6 @@
     ".eslintcache": true,
     "node_modules": true,
     "public": true
-  }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
