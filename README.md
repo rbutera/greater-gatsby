@@ -98,22 +98,6 @@ yarn test:e2e:ci # run once, OR...
 yarn test:e2e:dev # ... run and watch for changes
 ```
 
-### State Management (optional)
-
-State management has been included using [Redux](https://redux.js.org).
-
-To remove redux just remove src/state and empty out gatsby-browser.js
-
-All redux related source files belong in [src/state](./src/state)
-
-The redux setup is ready for unit tests. We've included some basic tests in there for you.
-
-Add new reducers to [src/state/root-reducer](./src/state/root-reducer.ts)
-
-We suggest you use the modular [redux-duck](https://github.com/erikras/ducks-modular-redux) redux structure convention, but you can use whatever you like!
-
-Do check out the example [Counter](./src/state/counter.ts) which also has associated [tests](./src/state/__tests__/counter.ts)
-
 ## Plans for Future Development
 
 - We intend to keep this starter lightweight, but also add some further opinionated customizations
@@ -126,8 +110,6 @@ Do check out the example [Counter](./src/state/counter.ts) which also has associ
 - [x] remove default styles
 - [x] remove default styles
 - [x] write blog post
-- [ ] create a good looking starter template
-- [ ] link to projects using this starter
 - [x] add unit tests
 - [ ] add favicon generation
 - [ ] add other features from [gatsby-universal](https://github.com/fabe/gatsby-universal)

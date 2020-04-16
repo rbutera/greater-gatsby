@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Footer Normal 1`] = `
+.c0 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+<footer
+  className="c0"
+>
+  ©
+  2020
+  , Built with
+
+  <a
+    href="https://www.gatsbyjs.org"
+  >
+    Gatsby
+  </a>
+   +
+
+  <a
+    href="https://www.github.com/rbutera/greater-gatsby"
+  >
+    greater-gatsby
+  </a>
+</footer>
+`;
+
+exports[`Storyshots Logo Normal 1`] = `
+.c1 {
+  display: inline-block;
+  color: #1a202c;
+  -webkit-letter-spacing: -0.025em;
+  -moz-letter-spacing: -0.025em;
+  -ms-letter-spacing: -0.025em;
+  letter-spacing: -0.025em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  line-height: 1.9rem;
+}
+
+.c2 {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0;
+  color: #718096;
+  max-width: 28rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+<div
+  className="c0"
+>
+  <img
+    alt="greater-gatsby logo"
+    className="w-32"
+    src="test-file-stub"
+  />
+  <h1
+    className="c1"
+  >
+    greater-gatsby
+  </h1>
+  <p
+    className="c2"
+  >
+    Bare-bones and Lightweight GatsbyJS Starter
+  </p>
+</div>
+`;
+
+exports[`Storyshots Navbar Normal 1`] = `<nav />`;
+
+exports[`Storyshots index/GetStarted Normal 1`] = `
+.c0 {
+  display: inline-block;
+  font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #805ad5;
+  color: #fff;
+  font-size: 0.875rem;
+  width: auto;
+}
+
+<section>
+  <p>
+    <strong>
+      So what are you waiting for? Get started today:
+    </strong>
+  </p>
+  <pre
+    className="c0"
+  >
+    gatsby new PROJECT_NAME https://github.com/rbutera/greater-gatsby
+  </pre>
+  <p>
+    For more instructions check out the
+
+    <a
+      href="https://github.com/rbutera/greater-gatsby"
+    >
+      readme.
+    </a>
+  </p>
+</section>
+`;
+
+exports[`Storyshots index/features Normal 1`] = `
+.c0 {
+  color: #4a5568;
+  margin: 1rem;
+}
+
+.c1 {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+<section
+  className=""
+>
+  <p>
+    Ready for high quality JAMStack projects for 2020, this highly performant, lightweight and barebones starter includes preconfigured defaults for the following libraries:
+  </p>
+  <ul
+    className="c0"
+  >
+    <li
+      className="c1"
+    >
+      Typescript
+    </li>
+    <li
+      className="c1"
+    >
+      PostCSS
+    </li>
+    <li
+      className="c1"
+    >
+      Storybook
+    </li>
+    <li
+      className="c1"
+    >
+      TailwindCSS
+    </li>
+    <li
+      className="c1"
+    >
+      Styled Components
+    </li>
+    <li
+      className="c1"
+    >
+      Jest
+    </li>
+    <li
+      className="c1"
+    >
+      Cypress
+    </li>
+    <li
+      className="c1"
+    >
+      eslint
+    </li>
+    <li
+      className="c1"
+    >
+      Prettier
+    </li>
+    <li
+      className="c1"
+    >
+      lint-staged
+    </li>
+  </ul>
+</section>
+`;
