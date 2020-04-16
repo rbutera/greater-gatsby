@@ -11,17 +11,17 @@ exports[`Storyshots Footer Normal 1`] = `
 <footer
   className="c0"
 >
-  ©
+  © 
   2020
   , Built with
-
+   
   <a
     href="https://www.gatsbyjs.org"
   >
     Gatsby
   </a>
    +
-
+   
   <a
     href="https://www.github.com/rbutera/greater-gatsby"
   >
@@ -126,7 +126,7 @@ exports[`Storyshots index/GetStarted Normal 1`] = `
   </pre>
   <p>
     For more instructions check out the
-
+     
     <a
       href="https://github.com/rbutera/greater-gatsby"
     >
