@@ -1,40 +1,8 @@
-module.exports = {
-  siteMetadata: {
-    title: `greater-gatsby`,
-    description: `BAREBONES and LIGHTWEIGHT GatsbyJS Default Starter with Typescript, PostCSS, Storybook, & Tailwind CSS`,
-    author: `@rbutera`,
-  },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `greater-gatsby`,
-        short_name: `greater-gatsby`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/greater-gatsby-emblem-only.svg`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {},
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-    `gatsby-plugin-typescript`,
-    `gatsby-plugin-postcss`,
-  ],
-}
+// We register the TypeScript evaluator in gatsby-config so we don't need to do
+// it in any other .js file. It automatically reads TypeScript config from
+// tsconfig.json.
+require('ts-node').register();
+
+// Use a TypeScript version of gatsby-config.js.
+module.exports = require('./gatsby-config.ts');
+
